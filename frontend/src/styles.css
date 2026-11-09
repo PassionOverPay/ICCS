@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply m-0 font-sans; }
+  input, textarea { @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100; }
+}
+@layer components {
+  .button { @apply rounded-xl bg-slate-900 px-5 py-3 font-semibold text-white transition hover:bg-teal-700; }
+  .button-secondary { @apply rounded-xl border border-slate-200 bg-white px-5 py-3 font-semibold text-slate-800 transition hover:border-teal-500; }
+  .card { @apply rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md; }
+  .stat { @apply rounded-2xl bg-white p-6 shadow-sm; }
+  .stat strong { @apply block text-3xl font-bold text-teal-700; }
+  .stat span { @apply mt-1 block text-sm text-slate-500; }
+  .badge { @apply rounded-full bg-teal-50 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-teal-700; }
+  .eyebrow { @apply mb-2 text-sm font-bold uppercase tracking-widest text-teal-700; }
+}
